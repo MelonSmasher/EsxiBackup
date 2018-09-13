@@ -30,6 +30,20 @@ Install-Module -Name VMware.PowerCLI;
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore;
 ```
 
+4: Either Enable or disable VMWare CEIP, this prevents a prompt each time the script is run
+
+Enable:
+
+```powershell
+Set-PowerCLIConfiguration -Scope AllUsers -ParticipateInCEIP $true;
+```
+
+Disable:
+
+```powershell
+Set-PowerCLIConfiguration -Scope AllUsers -ParticipateInCEIP $false;
+```
+
 ## Usage
 
 Backup:
@@ -45,3 +59,7 @@ Connect-VIServer esxi-host-1.domain.tld -user root -password <password>;
 Set-VMHost -VMHost esxi-host-1.domain.tld -State Maintenance;
 Set-VMHostFirmware -vmhost esxi-host-1.domain.tld -Restore -Force -SourcePath C:\esxi_backups\configBundle-esxi-host-1.domain.tld.tgz -HostUser root -HostPassword <password>;
 ```
+
+## Extra Stuff
+
+You can import my scheduled task to Windows Task Scheduler by importing `ESXi Backup Windows Task.xml` into Windows Task Scheduler. Make sure you've enabled or disabled the CEIP for all users before doing this.
