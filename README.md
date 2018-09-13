@@ -9,7 +9,7 @@ A simple script that backs up ESXi hosts.
 1: Get the code
 
 ```powershell
-git clone <repo>
+git clone https://github.com/MelonSmasher/EsxiBackup.git;
 cd EsxiBackup;
 cp config.example.json config.json;
 ```
