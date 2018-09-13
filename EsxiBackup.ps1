@@ -1,5 +1,5 @@
 # Read the config
-$config = (Get-Content config.json) -join "`n" | ConvertFrom-Json
+$config = (Get-Content (Join-Path $PSScriptRoot config.json)) -join "`n" | ConvertFrom-Json
 
 # Create a new backup destination folder
 $repo = Join-Path $config.backup_repo (get-date).ToString('yyyy-MM-dd_hh-mm-ss-tt');
