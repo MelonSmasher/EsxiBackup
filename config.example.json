@@ -1,0 +1,15 @@
+{
+    "backup_repo": "C:\\esxi_backups",
+    "hosts": [
+        {
+            "address": "esxi-host-1.domain.tld",
+            "user": "root",
+            "pass": "<RootPassword>"
+        },
+        {
+            "address": "esxi-host-2.domain.tld",
+            "user": "root",
+            "pass": "<RootPassword>"
+        }
+    ]
+}
