@@ -5,4 +5,5 @@ $config = (Get-Content config.json) -join "`n" | ConvertFrom-Json
 foreach ($h in $config.hosts) {
     Connect-VIServer $h.address -user $h.user -password $h.pass;
     Get-VMHostFirmware -vmhost $h.address -BackupConfiguration -DestinationPath $config.backup_repo;
+    Disconnect-VIServer $h.address -Force -Confirm:$false;
 }
