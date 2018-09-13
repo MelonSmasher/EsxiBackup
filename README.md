@@ -14,13 +14,13 @@ cd EsxiBackup;
 cp config.example.json config.json;
 ```
 
-2: Open `config.json` with a text editor.
+2: Open `config.json` with a text editor and configure the script
 
-    * `backup_repo` - Leave `backup_repo` set to `false` to use the local folder in this repo called `Backup`. You can also change this to a UNC network path or explicit folder path.
-    * `hosts` - Configure this JSON array with JSON objects with each hosts DNS or ip address, username, and password.
-        * `address` - The host DNS name or IP address.
-        * `user` - A user on the host. Usually root.
-        * `pass` - The user password. Usually the root password.
+* `backup_repo` - Leave `backup_repo` set to `false` to use the local folder in this repo called `Backup`. You can also change this to a UNC network path or explicit folder path.
+* `hosts` - Configure this JSON array with JSON objects with each hosts DNS or ip address, username, and password.
+    * `address` - The host DNS name or IP address.
+    * `user` - A user on the host. Usually root.
+    * `pass` - The user password. Usually the root password.
 
 3: Install the VMware PowerCLI
 
