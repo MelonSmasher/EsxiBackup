@@ -1,0 +1,1 @@
+Powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& './EsxiBackup.ps1'"
