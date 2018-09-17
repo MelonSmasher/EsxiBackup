@@ -67,7 +67,7 @@ Double click on `run_backup.bat`.
 ```powershell
 Connect-VIServer esxi-host-1.domain.tld -user root -password <password>;
 Set-VMHost -VMHost esxi-host-1.domain.tld -State Maintenance;
-Set-VMHostFirmware -vmhost esxi-host-1.domain.tld -Restore -Force -SourcePath C:\esxi_backups\configBundle-esxi-host-1.domain.tld.tgz -HostUser root -HostPassword <password>;
+Set-VMHostFirmware -vmhost esxi-host-1.domain.tld -Restore -Force -SourcePath C:\EsxiBackup\configBundle-esxi-host-1.domain.tld.tgz -HostUser root -HostPassword <password>;
 ```
 
 ## Extra Stuff
