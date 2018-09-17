@@ -46,13 +46,23 @@ Set-PowerCLIConfiguration -Scope AllUsers -ParticipateInCEIP $false;
 
 ## Usage
 
-Backup:
+### Backup
+
+#### Method 1
+
+From PowerShell:
 
 ```powershell
 ./EsxiBackup.ps1;
 ```
 
-Restore:
+#### Method 2
+
+From the GUI:
+
+Double click on `run_backup.bat`.
+
+### Restore
 
 ```powershell
 Connect-VIServer esxi-host-1.domain.tld -user root -password <password>;
