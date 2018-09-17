@@ -1,6 +1,8 @@
 # ESXi Host PowerCLI Backup Utility
 
-A simple powershell script that backs up ESXi hosts. I'm currently running this in production on Windows server, though it ran in PowerShell for OSX with the PowerCLI installed through the `Install-Module` cmdlet. Realistically this should work on any OS that can run PowerShell and the PowerCLI.
+A simple powershell script that backs up ESXi hosts.
+
+I'm currently running this in production on Windows server, though it ran in PowerShell for MacOS with the PowerCLI installed through the `Install-Module` cmdlet. Realistically this should work on any OS that can run PowerShell and the PowerCLI. Feel free to test on Linux if you wish, and let me know how it works out.
 
 ---
 
